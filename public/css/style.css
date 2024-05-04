@@ -880,6 +880,9 @@ a:focus {
 .info_section {
   background-color: #0f1521;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info_section .info_logo {
@@ -901,8 +904,6 @@ a:focus {
 }
 
 .info_section .info_insta .insta_container > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -912,22 +913,14 @@ a:focus {
 
 .info_section .info_insta .insta_container .insta-box {
   margin: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 
 .info_section .info_contact .img-box {
   width: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .info_section .info_contact p {
@@ -935,12 +928,8 @@ a:focus {
 }
 
 .info_section .info_contact > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 20px 0;
 }
 
@@ -960,7 +949,6 @@ a:focus {
   padding: 8px 30px;
   background-color: #24d278;
   color: #ffffff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
   border-radius: 0;
@@ -978,8 +966,6 @@ a:focus {
 .info_section .info_form .social_box {
   margin-top: 35px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1014,11 +1000,11 @@ a:focus {
   color: #171717;
 }
 
-/* end footer section*/
+/* end footer section */
 #navbarSupportedContent {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  opacity: 0;
+  /* -webkit-transform: translateX(100vw);
+          transform: translateX(100vw); */
+  opacity: 1;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   -webkit-box-pack: justify;
@@ -1030,9 +1016,9 @@ a:focus {
 }
 
 #navbarSupportedContent.lg_nav-toggle {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  opacity: 0;
 }
 
 .custom_menu-btn button {
