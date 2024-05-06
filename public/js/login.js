@@ -96,12 +96,26 @@ $(document).ready(function () {
     $("#signup-link").on("click", function () {
       $(".signup-form").show();
       $(".login-form").hide();
+      $("#forgetPass-form").hide();
     });
-  
+
     // Show login form and hide signup form when login button is clicked
     $("#login-link").on("click", function () {
       $(".login-form").show();
       $(".signup-form").hide();
+      $("#forgetPass-form").hide();
     });
+
+    // show forgetPassword form and hide login form when forgetPassword button is clicked
+    $("#forgetPass-link").on("click", function () {
+      $(".forgetPass-form").show();
+      $(".login-form").hide();
+    });
+
+    $("#backToLogin").on("click", function() {
+      $(".login-form").show();
+      $(".forgetPass-form").hide();
+    });
+
   });
   

@@ -27,6 +27,17 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  .forgetPass-form {
+    max-width: 50%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   
   .signup-form {
     max-width: 50%;
@@ -105,6 +116,10 @@
     display: none;
   }
   
+  .forgetPass-form {
+    display: none;
+  }
+
   .additional-fields {
     display: none; 
     flex-wrap: wrap;
