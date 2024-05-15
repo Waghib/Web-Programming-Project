@@ -107,9 +107,11 @@
         <!-- Login Form -->
         <div class="login-form">
             <h1>Sign In</h1>
-            <form action="#">
+            <form id="loginForm">
                 <input type="text" name="username" placeholder="username">
+                <div class="error-message" id="login-username-error"></div>
                 <input type="password" name="password" placeholder="password">
+                <div class="error-message" id="login-password-error"></div>
                 <a href="#" id="forgetPass-link">Forgot password?</a>
                 <input type="submit" class="button" value="Login">
             </form>
@@ -121,17 +123,42 @@
         <!-- Signup Form -->
         <div class="signup-form">
             <h1>Sign Up</h1>
-            <form action="#" class="signup-fields">
-                <div class="main-fields">
-                    <input type="text" name="username" placeholder="username">
-                    <input type="text" name="email" placeholder="email">
-                    <input type="password" name="password" placeholder="password">
-                    <input type="password" name="confirmPass" placeholder="confirm password">
-                    <input type="text" name="phone" placeholder="phone number">
-                    <input type="text" name="address" placeholder="address">
-                    <input type="text" name="city" placeholder="city">
-                    <input type="text" name="country" placeholder="country">
-                    <input type="number" name="age" placeholder="age" min="0">
+            <form id="signupForm" class="signup-fields">
+                <div class="input-group">
+                    <input type="text" name="username" id="username" placeholder="Enter your username">
+                    <div class="error-message" id="signup-username-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                    <div class="error-message" id="signup-email-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <div class="error-message" id="signup-password-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="confirmPass" id="confirmPass" placeholder="Confirm your password">
+                    <div class="error-message" id="signup-confirmPass-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+                    <div class="error-message" id="signup-phone-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="address" id="address" placeholder="Enter your address">
+                    <div class="error-message" id="signup-address-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="city" id="city" placeholder="Enter your city">
+                    <div class="error-message" id="signup-city-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="country" id="country" placeholder="Enter your country">
+                    <div class="error-message" id="signup-country-error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="number" name="age" id="age" placeholder="Enter your age" min="0">
+                    <div class="error-message" id="signup-age-error"></div>
                 </div>
                 <input type="submit" class="button" value="Signup">
             </form>
@@ -140,13 +167,16 @@
             </div>
         </div>
 
+
         <!-- Forget Password Form -->
         <div class="forgetPass-form">
             <h1>Forget Password</h1>
             <p>Enter your email address and we will send you a link to reset your password</p>
-            <form action="#">
+            <form id="forgetPassForm">
                 <input type="email" name="email" placeholder="Enter your email">
-                <input type="submit" class="button" id="forgetPass" value="Send Email">
+                <div class="error-message" id="forgetPass-email-error"></div>
+                <div class="error-message" id="forgetPass-email-success"></div>
+                <input type="submit" class="button" id="forgetPass" value="Send Email" name="email-sent">
             </form>
             <center>
                 <p>Back to <a id="backToLogin" href="#">Login</a></p>
